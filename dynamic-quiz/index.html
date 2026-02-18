@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dynamic Quiz</title>
+</head>
+
+<body>
+
+    <h1>Dynamic Quiz</h1>
+
+    <!-- Question 1 -->
+    <p><strong>1. What does HTML stand for?</strong></p>
+    <label><input type="radio" name="q1" value="A"> HyperText Markup Language</label><br>
+    <label><input type="radio" name="q1" value="B"> HighText Machine Language</label><br>
+    <label><input type="radio" name="q1" value="C"> HyperText and links Markup Language</label><br>
+    <p id="f1"></p>
+
+    <!-- Question 2 -->
+    <p><strong>2. Which language is used for styling web pages?</strong></p>
+    <label><input type="radio" name="q2" value="A"> HTML</label><br>
+    <label><input type="radio" name="q2" value="B"> JavaScript</label><br>
+    <label><input type="radio" name="q2" value="C"> CSS</label><br>
+    <p id="f2"></p>
+
+    <!-- Question 3 -->
+    <p><strong>3. Which symbol is used for single-line comments in JavaScript?</strong></p>
+    <label><input type="radio" name="q3" value="A"> /* */</label><br>
+    <label><input type="radio" name="q3" value="B"> //</label><br>
+    <label><input type="radio" name="q3" value="C"> #</label><br>
+    <p id="f3"></p>
+
+    <!-- Question 4 -->
+    <p><strong>4. Which HTML tag creates a hyperlink?</strong></p>
+    <label><input type="radio" name="q4" value="A"> &lt;link&gt;</label><br>
+    <label><input type="radio" name="q4" value="B"> &lt;href&gt;</label><br>
+    <label><input type="radio" name="q4" value="C"> &lt;a&gt;</label><br>
+    <p id="f4"></p>
+
+    <!-- Question 5 -->
+    <p><strong>5. What does DOM stand for?</strong></p>
+    <label><input type="radio" name="q5" value="A"> Document Object Model</label><br>
+    <label><input type="radio" name="q5" value="B"> Data Object Management</label><br>
+    <label><input type="radio" name="q5" value="C"> Display Object Module</label><br>
+    <p id="f5"></p>
+
+    <button onclick="submitQuiz()">Submit Quiz</button>
+    <button onclick="resetQuiz()">Reset Quiz</button>
+
+    <h2 id="result"></h2>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>

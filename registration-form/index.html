@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <label>Name: <input type="text" id="name" placeholder="Enter your name"></label><br>
+    <span id="nameError"></span><br>
+
+    <label>Email: <input type="text" id="email" placeholder="Enter your email"></label><br>
+    <span id="emailError"></span><br>
+
+    <label>Age: <input type="number" id="age" placeholder="Enter your age"></label><br>
+    <span id="ageError"></span><br>
+
+    <label>Password: <input type="password" id="password" placeholder="Min 6 characters"></label><br>
+    <span id="passwordError"></span><br><br>
+
+    <button onclick="submitForm()">Register</button>
+
+    <p id="successMsg"></p>
+
+    <script src="form.js"></script>
+</body>
+
+</html>

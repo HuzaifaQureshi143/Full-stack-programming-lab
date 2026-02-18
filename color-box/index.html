@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Color Box Generator</title>
+</head>
+
+<body>
+
+    <h1>Color Box Generator</h1>
+
+    <label>Color 1: <input type="text" id="color1" placeholder="e.g. red or #ff0000"></label><br><br>
+    <label>Color 2: <input type="text" id="color2" placeholder="e.g. blue or #0000ff"></label><br><br>
+    <label>Color 3: <input type="text" id="color3" placeholder="e.g. green or #00ff00"></label><br><br>
+
+    <button onclick="addColors()">Add Colors</button>
+    <button onclick="clearAll()">Clear All</button>
+
+    <hr>
+
+    <!-- BOM info display -->
+    <div id="browserInfo"></div>
+
+    <hr>
+
+    <!-- Color boxes appear here -->
+    <div id="boxContainer"></div>
+
+    <script src="colorbox.js"></script>
+</body>
+
+</html>
