@@ -1,0 +1,40 @@
+/* Task 1 – Student Management System
+   Task-specific styles only. Base styles come from ../shared.css */
+
+#output {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Task 1 uses .student-card (not the generic .card) for the grid items */
+.student-card {
+    background: var(--clr-surface);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--clr-border);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.student-card h2 {
+    color: var(--clr-accent);
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.student-card p {
+    margin-bottom: 8px;
+    font-size: 0.93rem;
+    line-height: 1.55;
+}
+
+.student-card p strong {
+    color: var(--clr-muted);
+}

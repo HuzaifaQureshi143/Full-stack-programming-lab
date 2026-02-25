@@ -1,0 +1,214 @@
+/* =============================================
+   Lab 03 — Shared Design System
+   A single minimal theme for all 7 tasks.
+   ============================================= */
+
+/* ── Design Tokens ── */
+:root {
+    --clr-accent: #00e5ff;
+    --clr-accent-light: #00333a;
+    --clr-bg: #0a1114;
+    --clr-surface: #121c22;
+    --clr-text: #e0f2f1;
+    --clr-muted: #8ca2a6;
+    --clr-border: #1e2d36;
+    --clr-success-bg: #122318;
+    --clr-success-text: #4caf50;
+    --clr-danger-bg: #2a1117;
+    --clr-danger-text: #ef5350;
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
+    --shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.6);
+
+    --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-mono: 'Consolas', 'Courier New', monospace;
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ── Base ── */
+body {
+    font-family: var(--font-sans);
+    background: var(--clr-bg);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: var(--clr-text);
+}
+
+/* ── Page Header ── */
+h1 {
+    text-align: center;
+    color: var(--clr-accent);
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.3px;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--clr-muted);
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+}
+
+/* ── Output Container ── */
+#output {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* ── Generic Card ── */
+.card {
+    background: var(--clr-surface);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--clr-border);
+}
+
+.card h2 {
+    color: var(--clr-accent);
+    margin-bottom: 14px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--clr-border);
+    padding-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--clr-text);
+}
+
+.card p strong {
+    color: var(--clr-muted);
+    font-weight: 600;
+}
+
+/* ── Loading Spinner ── */
+.loader-card {
+    background: var(--clr-surface);
+    border-radius: var(--radius-lg);
+    padding: 48px;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--clr-border);
+}
+
+.loader-card p {
+    margin-top: 18px;
+    font-size: 1rem;
+    color: var(--clr-muted);
+}
+
+.spinner {
+    width: 44px;
+    height: 44px;
+    border: 4px solid var(--clr-border);
+    border-top-color: var(--clr-accent);
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ── Status Banner ── */
+.status-banner {
+    background: var(--clr-surface);
+    border-radius: var(--radius-md);
+    padding: 14px 20px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--clr-border);
+}
+
+.status-banner.success {
+    border-left: 4px solid #4caf50;
+    background: var(--clr-success-bg);
+}
+
+.status-banner.error {
+    border-left: 4px solid #e53935;
+    background: var(--clr-danger-bg);
+}
+
+.status-banner p {
+    font-size: 0.95rem;
+    color: var(--clr-text);
+}
+
+/* ── Shared Utility: Badge / Pill ── */
+.badge {
+    background: var(--clr-accent);
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ── Shared Utility: Course Tags ── */
+.course-tags,
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.course-tag {
+    background: var(--clr-accent-light);
+    color: var(--clr-accent);
+    padding: 3px 11px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border: 1px solid var(--clr-border);
+}
+
+/* ── Shared Utility: Item List ── */
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.item-list li {
+    background: var(--clr-accent-light);
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: var(--clr-text);
+}
+
+/* ── Shared Utility: Highlight Tag ── */
+.highlight {
+    background: var(--clr-accent);
+    color: #fff;
+    padding: 3px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.88rem;
+}

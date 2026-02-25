@@ -1,0 +1,40 @@
+/* Task 4 – Unique Course Registration System
+   Task-specific styles only. Base styles come from ../shared.css */
+
+.course-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li {
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 6px;
+    font-size: 0.92rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--clr-border);
+}
+
+.course-list li.added {
+    background: var(--clr-success-bg);
+    color: var(--clr-success-text);
+    border-color: #a5d6a7;
+}
+
+.course-list li.duplicate {
+    background: var(--clr-danger-bg);
+    color: var(--clr-danger-text);
+    border-color: #ef9a9a;
+}
+
+.unique-course {
+    background: var(--clr-accent-light);
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 6px;
+    font-size: 0.92rem;
+    color: var(--clr-accent);
+    border: 1px solid #c5ceff;
+}

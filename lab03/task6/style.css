@@ -1,0 +1,23 @@
+/* Task 6 – Mini University Portal
+   Task-specific styles only. Base styles come from ../shared.css */
+
+.student-block {
+    background: var(--clr-accent-light);
+    border-radius: var(--radius-md);
+    padding: 18px;
+    margin-bottom: 14px;
+    border-left: 4px solid var(--clr-accent);
+}
+
+.student-block h3 {
+    color: var(--clr-accent);
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.student-block p {
+    font-size: 0.9rem;
+    color: var(--clr-muted);
+    margin-bottom: 4px;
+}

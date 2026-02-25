@@ -1,0 +1,44 @@
+/* Task 5 – Product Catalog using Map
+   Task-specific styles only. Base styles come from ../shared.css */
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.product-table th,
+.product-table td {
+    padding: 11px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.product-table th {
+    background: var(--clr-accent);
+    color: #fff;
+    font-weight: 600;
+}
+
+.product-table tr:hover td {
+    background: var(--clr-accent-light);
+}
+
+.search-result {
+    background: var(--clr-success-bg);
+    border-left: 4px solid #4caf50;
+    padding: 14px 18px;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-top: 10px;
+    font-size: 0.92rem;
+}
+
+.deleted {
+    background: var(--clr-danger-bg);
+    border-left: 4px solid #e53935;
+    padding: 14px 18px;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-top: 10px;
+    font-size: 0.92rem;
+}
