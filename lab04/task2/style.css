@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+#gallery {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+#galleryImage {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#imageCaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+.controls {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}

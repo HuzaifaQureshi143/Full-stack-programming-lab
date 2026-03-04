@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4: Tabbed Content with Smooth Scroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Task 4: Tabbed Content with Smooth Scroll</h2>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-target="#section1">Tab 1</button>
+        <button class="tab-btn" data-target="#section2">Tab 2</button>
+        <button class="tab-btn" data-target="#section3">Tab 3</button>
+        <button class="tab-btn" data-target="#section4">Tab 4</button>
+    </div>
+
+    <div class="tab-content" id="section1" style="display:block;">
+        <h3>Section 1 Content</h3>
+        <p>This is the content for the first tab.</p>
+        <div class="spacer">Scroll down to see the effect when switching tabs (if content is long).</div>
+    </div>
+
+    <div class="tab-content" id="section2">
+        <h3>Section 2 Content</h3>
+        <p>This is the content for the second tab.</p>
+        <p>It smoothly animates into view using jQuery effects.</p>
+        <div class="spacer">Placeholder content for length.</div>
+    </div>
+
+    <div class="tab-content" id="section3">
+        <h3>Section 3 Content</h3>
+        <p>This is the third tab's content.</p>
+        <p>Notice the smooth scrolling behavior when clicked.</p>
+        <div class="spacer">Placeholder content for length.</div>
+    </div>
+
+    <div class="tab-content" id="section4">
+        <h3>Section 4 Content</h3>
+        <p>Final tab content.</p>
+        <div class="spacer">Placeholder content for length.</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

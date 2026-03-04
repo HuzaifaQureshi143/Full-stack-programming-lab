@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.highlight {
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+.list-item {
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+.delete-btn {
+    color: white;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: #c82333;
+}

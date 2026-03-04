@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.tabs {
+    margin-bottom: 0;
+    display: flex;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    outline: none;
+    margin-right: 5px;
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab-btn.active {
+    background-color: #fff;
+    border-top: 3px solid #007bff;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-top: -1px;
+    /* Align with tab borders */
+}
+
+.spacer {
+    height: 400px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+    padding: 20px;
+    color: #999;
+}

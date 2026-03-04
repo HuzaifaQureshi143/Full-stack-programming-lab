@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7: Drag-and-Drop Sortable List</title>
+    <!-- Include jQuery UI CSS for layout structure if needed -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Task 7: Drag-and-Drop Sortable List</h2>
+    <p>Drag items to reorder them.</p>
+
+    <ul id="sortableList">
+        <li class="sortable-item" data-id="1">1. Learn HTML</li>
+        <li class="sortable-item" data-id="2">2. Master CSS</li>
+        <li class="sortable-item" data-id="3">3. Understand JavaScript</li>
+        <li class="sortable-item" data-id="4">4. Explore jQuery</li>
+        <li class="sortable-item" data-id="5">5. Build Projects</li>
+    </ul>
+
+    <div id="orderStatusContainer">
+        Current Order ID Sequence: <span id="currentOrder">1, 2, 3, 4, 5</span>
+    </div>
+
+    <!-- Include jQuery and jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

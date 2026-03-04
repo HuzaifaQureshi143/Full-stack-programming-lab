@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 8: Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Task 8: Interactive Quiz Game</h2>
+
+    <div id="quizContainer">
+        <div id="questionContainer">
+            <h3 id="questionText">Question goes here</h3>
+            <ul id="optionsList"></ul>
+        </div>
+
+        <div class="navigation">
+            <button id="nextBtn" disabled>Next Question</button>
+        </div>
+
+        <div id="progress">Question <span id="currentQ">1</span> of <span id="totalQ">3</span></div>
+    </div>
+
+    <!-- Final Score Display -->
+    <div id="scoreContainer" style="display:none;">
+        <h2>Quiz Complete!</h2>
+        <p>Your Score: <span id="finalScore">0</span> / <span id="maxScore">3</span></p>
+        <button id="restartBtn">Restart Quiz</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

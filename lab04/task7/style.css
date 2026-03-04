@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+#sortableList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+
+.sortable-item {
+    margin: 0 0 10px 0;
+    padding: 15px;
+    font-size: 1.1em;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: grab;
+    transition: background-color 0.2s;
+}
+
+.sortable-item:active {
+    cursor: grabbing;
+}
+
+/* Highlight dragged item */
+.ui-sortable-helper {
+    background-color: #e2e3e5;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #adb5bd;
+}
+
+/* Placeholder shows where the item will be dropped */
+.ui-sortable-placeholder {
+    border: 2px dashed #adb5bd;
+    background-color: transparent;
+    visibility: visible !important;
+    height: 52px !important;
+}
+
+#orderStatusContainer {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #495057;
+    background-color: #e9ecef;
+    padding: 15px;
+    width: 320px;
+    border-radius: 4px;
+}
+
+#currentOrder {
+    color: #007bff;
+}
