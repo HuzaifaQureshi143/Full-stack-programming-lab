@@ -23,7 +23,7 @@ function App() {
     },
     {
       courseName: "Mobile App Dev",
-      instructor: "Mr. Adnan Aslam",
+      instructor: "Mr. Adnan",
       duration: "3 Months",
       type: "Offline"
     },
