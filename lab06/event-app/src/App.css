@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.panel {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+button {
+  margin: 6px;
+  padding: 9px 14px;
+  border: none;
+  background: #10b981;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #059669;
+}
+
+.message {
+  margin-top: 18px;
+  font-size: 18px;
+}
