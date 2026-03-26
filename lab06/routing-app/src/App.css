@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f3f4f6;
+}
+
+.layout {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+nav {
+  margin-bottom: 15px;
+}
+
+nav a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.product {
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
