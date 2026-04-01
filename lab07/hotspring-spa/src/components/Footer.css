@@ -1,0 +1,133 @@
+.footer-container {
+  background-color: var(--dark-blue);
+  color: #fff;
+  padding-top: 40px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 20px 40px;
+}
+
+.footer-col h3 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-col p {
+  font-size: 13px;
+  color: #b3c2cc;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.call-247 {
+  font-size: 14px !important;
+  color: #fff !important;
+}
+
+.call-247 .phone {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #b3c2cc;
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #009ce4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.social-icon.twitter { background-color: #00aced; }
+.social-icon.facebook { background-color: #3b5998; }
+.social-icon.linkedin { background-color: #007bb6; }
+.social-icon.google { background-color: #dd4b39; }
+.social-icon.youtube { background-color: #bb0000; }
+.social-icon.pinterest { background-color: #cb2027; }
+
+.social-icon:hover { opacity: 0.8; }
+
+.newsletter-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #e5e5e5;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.pay-icon {
+  width: 35px;
+  height: 22px;
+  background-color: white;
+  border-radius: 2px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.footer-bottom {
+  background-color: #001a2c;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+}

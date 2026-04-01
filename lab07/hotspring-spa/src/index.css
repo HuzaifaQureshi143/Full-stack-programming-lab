@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-red: #da1c22;
+  --dark-blue: #002e4d;
+  --light-blue: #009ce4;
+  --bg-color: #f6f6f6;
+  --text-dark: #333333;
+  --text-light: #777777;
+  --border-color: #e5e5e5;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-color);
+  /* The mockup has a subtle wave background outside the container.
+     We'll mock it with a simple gradient or color for now since we said 'use any' 
+     and don't have the exact image asset. */
+  background: linear-gradient(to right, #eef5f9, #ffffff, #eef5f9);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+/* Base utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-red {
+  background-color: var(--primary-red);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.btn-red:hover {
+  opacity: 0.9;
+}
