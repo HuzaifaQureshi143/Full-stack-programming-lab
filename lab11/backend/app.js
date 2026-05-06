@@ -30,14 +30,40 @@ app.get('/', (req, res) => {
 
 // Seed some products
 app.get('/seed', async (req, res) => {
-    await Product.deleteMany({});
-    await Product.insertMany([
-        { name: 'Laptop', price: 999, description: 'High performance laptop', category: 'Electronics', image: 'https://via.placeholder.com/150' },
-        { name: 'Headphones', price: 49, description: 'Noise cancelling headphones', category: 'Electronics', image: 'https://via.placeholder.com/150' },
-        { name: 'T-Shirt', price: 19, description: 'Cotton t-shirt', category: 'Clothing', image: 'https://via.placeholder.com/150' },
-        { name: 'Sneakers', price: 89, description: 'Running sneakers', category: 'Footwear', image: 'https://via.placeholder.com/150' },
-    ]);
-    res.json({ message: 'Products seeded!' });
+  await Product.deleteMany({});
+
+  await Product.insertMany([
+    {
+      name: 'Laptop',
+      price: 999,
+      description: 'High performance laptop',
+      category: 'Electronics',
+      image: 'https://picsum.photos/400?random=1'
+    },
+    {
+      name: 'Headphones',
+      price: 49,
+      description: 'Noise cancelling headphones',
+      category: 'Electronics',
+      image: 'https://picsum.photos/400?random=2'
+    },
+    {
+      name: 'T-Shirt',
+      price: 19,
+      description: 'Cotton t-shirt',
+      category: 'Clothing',
+      image: 'https://picsum.photos/400?random=3'
+    },
+    {
+      name: 'Sneakers',
+      price: 89,
+      description: 'Running sneakers',
+      category: 'Footwear',
+      image: 'https://picsum.photos/400?random=4'
+    },
+  ]);
+
+  res.json({ message: 'Products seeded with images!' });
 });
 
 // Get all products
